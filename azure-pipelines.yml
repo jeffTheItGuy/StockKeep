@@ -1,29 +1,37 @@
-# Docker
-# Build a Docker image
-# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
-
 trigger:
 - main
 
-resources:
-- repo: self
+pool:
+  name: 'Default' 
 
 variables:
-  tag: '$(Build.BuildId)'
+  imageName: 'stockkeep'
+  dockerImageTag: 'latest'
 
-stages:
-- stage: Build
-  displayName: Build image
-  jobs:
-  - job: Build
-    displayName: Build
-    pool:
-      vmImage: ubuntu-latest
-    steps:
-    - task: Docker@2
-      displayName: Build an image
-      inputs:
-        command: build
-        dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
-        tags: |
-          $(tag)
+jobs:
+- job: BuildAndRun
+  displayName: 'Build and Run Docker Image Locally on Self-Hosted Agent'
+  steps:
+    - checkout: self
+
+    - script: |
+        docker --version  # Check Docker version
+        docker build -t $(imageName):$(dockerImageTag) .  # Build the Docker image
+      displayName: 'Build Docker Image'
+
+    - script: |
+        echo "Working directory: $(Build.SourcesDirectory)"
+      displayName: 'Output Working Directory Path'
+
+    - script: |
+        docker run -d --name $(imageName)-container $(imageName):$(dockerImageTag)  # Run Docker container in detached mode
+      displayName: 'Run Docker Container'
+
+    - script: |
+        sleep 10  # Wait for 10 seconds
+      displayName: 'Wait for 10 Seconds'
+
+    - script: |
+        docker stop $(imageName)-container  # Stop the Docker container
+        docker rm $(imageName)-container  # Remove the Docker container
+      displayName: 'Stop and Remove Docker Container'
