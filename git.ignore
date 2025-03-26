@@ -40,3 +40,6 @@ project.lock.json
 **/project.assets.json
 **/packages.lock.json
 .nuget/
+
+#vscode Server
+.vscode-server
