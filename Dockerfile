@@ -1,33 +1,41 @@
-# Use the official .NET SDK image to build the app
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+# Use the official .NET SDK 8.0 image as the base image
+FROM mcr.microsoft.com/dotnet/sdk:8.0
 
-# Set the working directory inside the container
-WORKDIR /app
+# Set environment variables for non-interactive apt-get
+ENV DEBIAN_FRONTEND=noninteractive
 
-# Copy the .csproj and restore dependencies (via dotnet restore)
-COPY *.csproj ./
-RUN dotnet restore
+# Install necessary dependencies
+RUN apt-get update && \
+    apt-get install -y git sudo
 
-# Copy the rest of the application code
-COPY . ./
+# Create a group with the same GID as the host user
+ARG HOST_GROUP_ID=1000
+RUN groupadd -g ${HOST_GROUP_ID} hostgroup
 
-# Publish the application to the /out folder in the container
-RUN dotnet publish -c Release -o /out
+# Create user jefftheitguy with sudo permissions and add to the host group
+ARG HOST_USER_ID=1000
+RUN useradd -m -s /bin/bash -u ${HOST_USER_ID} -g ${HOST_GROUP_ID} -G sudo jefftheitguy && \
+    echo "jefftheitguy ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
-# Use the official ASP.NET Core runtime image for the final image
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
+# Set the working directory
+WORKDIR /home/jefftheitguy
 
-# Set the working directory inside the container
-WORKDIR /app
+# Clean up
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Copy the published files from the build container
-COPY --from=build /out .
+# Switch to the new user
+USER jefftheitguy
 
-# Set the environment variable to specify the ASP.NET Core environment (optional)
-ENV ASPNETCORE_ENVIRONMENT=Production
+# Expose default port
+EXPOSE 8080
 
-# Expose the port that the app will run on
-EXPOSE 80
+# Start bash
+CMD ["bash"]
 
-# Run the application
-ENTRYPOINT ["dotnet", "StockKeep.dll"]
+
+
+
+
+
+
+

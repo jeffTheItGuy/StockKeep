@@ -1,0 +1,7 @@
+[user]
+	email = jefftny1@gmail.com
+	name = JeffTheItGuy
+[credential]
+	helper = "!f() { /home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/node /tmp/vscode-remote-containers-7c57f1aa-851e-4333-b027-7367c38e6854.js git-credential-helper $*; }; f"
+[alias]
+	datecommit = !git commit --allow-empty-message --no-edit

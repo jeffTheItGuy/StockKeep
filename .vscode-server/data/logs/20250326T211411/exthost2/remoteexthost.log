@@ -1,0 +1,132 @@
+2025-03-26 21:14:44.338 [info] Extension host with pid 754 started
+2025-03-26 21:14:44.434 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-03-26 21:14:44.457 [info] Lock '/home/jefftheitguy/.vscode-server/data/User/workspaceStorage/300dfb1d42aa63e0844bdff940262295/vscode.lock': Lock acquired.
+2025-03-26 21:14:44.507 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-03-26 21:14:44.508 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-03-26 21:14:44.800 [info] Eager extensions activated
+2025-03-26 21:14:44.801 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-03-26 21:14:44.801 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-03-26 21:14:44.939 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-03-26 21:14:45.246 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1596
+2025-03-26 21:14:45.700 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1596
+2025-03-26 21:14:48.130 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1596
+2025-03-26 21:14:53.475 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1596
+2025-03-26 21:14:58.765 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1596
+2025-03-26 21:15:04.073 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1596
+2025-03-26 21:15:04.147 [info] Extension host terminating: received terminate message from renderer
+2025-03-26 21:15:04.148 [info] Lock '/home/jefftheitguy/.vscode-server/data/User/workspaceStorage/300dfb1d42aa63e0844bdff940262295/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2025-03-26 21:15:04.188 [error] Canceled: Canceled
+	at new dR (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:155028)
+	at qy.U (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:159639)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:157133)
+	at kw.g (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:112:41039)
+	at kw.executeCommand (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:112:40543)
+	at r.registerCommand.description (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:112:39873)
+	at kw.h (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:112:41559)
+	at kw.g (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:112:40636)
+	at kw.executeCommand (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:112:40543)
+	at Object.executeCommand (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:172:37375)
+	at Th.L [as value] (/home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/extensions/git/dist/main.js:2:1000063)
+	at D.B (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:27:2375)
+	at D.C (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:27:2445)
+	at D.fire (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:27:2662)
+	at Object.p [as dispose] (/home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/extensions/git/dist/main.js:2:1022703)
+	at /home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/extensions/git/dist/main.js:2:1029021
+	at Array.forEach (<anonymous>)
+	at b.dispose (/home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/extensions/git/dist/main.js:2:1029007)
+	at fv.<anonymous> (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:108:8922)
+	at fv.dispose (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:108:9018)
+	at fv.<anonymous> (/home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/extensions/git/dist/main.js:2:1002547)
+	at fv.dispose (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:108:9018)
+	at hi (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:25:701)
+	at file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:116:14994
+	at file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:25:1011
+	at Object.dispose (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:8:705)
+	at zz.eb (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:116:11921)
+	at file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:116:9876
+	at Array.map (<anonymous>)
+	at zz.$ (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:116:9864)
+	at zz.terminate (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:116:10107)
+	at FI.terminate (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:117:1434)
+	at ts (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:190:15108)
+	at Th.value (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:190:13269)
+	at D.B (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:27:2375)
+	at D.fire (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:27:2593)
+	at Gn.fire (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:9459)
+	at Ym.A (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:12575)
+	at Th.value (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:10995)
+	at D.B (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:27:2375)
+	at D.fire (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:27:2593)
+	at C6.acceptChunk (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:7942)
+	at Th.value (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:7228)
+	at D.B (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:27:2375)
+	at D.fire (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:27:2593)
+	at tT.z (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:21747)
+	at tT.acceptFrame (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:21553)
+	at eT.n (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:20080)
+	at file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:17312
+	at Socket.t (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:15252)
+	at Socket.emit (node:events:518:28)
+	at addChunk (node:internal/streams/readable:561:12)
+	at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+	at Readable.push (node:internal/streams/readable:392:5)
+	at TCP.onStreamRead (node:internal/stream_base_commons:191:23) setContext undefined
+2025-03-26 21:15:04.190 [error] Canceled: Canceled
+	at new dR (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:155028)
+	at qy.U (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:159639)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:157133)
+	at kw.g (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:112:41039)
+	at kw.executeCommand (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:112:40543)
+	at r.registerCommand.description (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:112:39873)
+	at kw.h (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:112:41559)
+	at kw.g (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:112:40636)
+	at kw.executeCommand (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:112:40543)
+	at Object.executeCommand (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:172:37375)
+	at set hasGitHubRepositories [as hasGitHubRepositories] (/home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/extensions/github/dist/extension.js:2:217805)
+	at /home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/extensions/github/dist/extension.js:2:218764
+	at Th.value (/home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/extensions/git/dist/main.js:2:1120702)
+	at D.B (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:27:2375)
+	at D.C (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:27:2445)
+	at D.fire (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:27:2662)
+	at Object.p [as dispose] (/home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/extensions/git/dist/main.js:2:1022703)
+	at /home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/extensions/git/dist/main.js:2:1029021
+	at Array.forEach (<anonymous>)
+	at b.dispose (/home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/extensions/git/dist/main.js:2:1029007)
+	at fv.<anonymous> (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:108:8922)
+	at fv.dispose (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:108:9018)
+	at fv.<anonymous> (/home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/extensions/git/dist/main.js:2:1002547)
+	at fv.dispose (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:108:9018)
+	at hi (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:25:701)
+	at file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:116:14994
+	at file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:25:1011
+	at Object.dispose (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:8:705)
+	at zz.eb (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:116:11921)
+	at file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:116:9876
+	at Array.map (<anonymous>)
+	at zz.$ (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:116:9864)
+	at zz.terminate (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:116:10107)
+	at FI.terminate (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:117:1434)
+	at ts (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:190:15108)
+	at Th.value (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:190:13269)
+	at D.B (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:27:2375)
+	at D.fire (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:27:2593)
+	at Gn.fire (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:9459)
+	at Ym.A (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:12575)
+	at Th.value (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:10995)
+	at D.B (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:27:2375)
+	at D.fire (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:27:2593)
+	at C6.acceptChunk (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:7942)
+	at Th.value (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:7228)
+	at D.B (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:27:2375)
+	at D.fire (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:27:2593)
+	at tT.z (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:21747)
+	at tT.acceptFrame (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:21553)
+	at eT.n (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:20080)
+	at file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:17312
+	at Socket.t (file:///home/jefftheitguy/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/vs/workbench/api/node/extensionHostProcess.js:29:15252)
+	at Socket.emit (node:events:518:28)
+	at addChunk (node:internal/streams/readable:561:12)
+	at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+	at Readable.push (node:internal/streams/readable:392:5)
+	at TCP.onStreamRead (node:internal/stream_base_commons:191:23) setContext undefined
+2025-03-26 21:15:04.192 [info] Extension host with pid 754 exiting with code 0

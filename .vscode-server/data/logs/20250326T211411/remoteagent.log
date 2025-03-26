@@ -1,0 +1,20 @@
+2025-03-26 21:14:11.992 [info] 
+
+
+
+
+2025-03-26 21:14:12.008 [info] Extension host agent started.
+2025-03-26 21:14:12.079 [debug] No extensions are marked as removed.
+2025-03-26 21:14:12.081 [info] Started initializing default profile extensions in extensions installation folder. file:///home/jefftheitguy/.vscode-server/extensions
+2025-03-26 21:14:12.082 [info] [127.0.0.1][0bbfa9d0][ManagementConnection] New connection established.
+2025-03-26 21:14:21.845 [info] Log level changed to info
+2025-03-26 21:14:21.974 [info] [127.0.0.1][f83ff79b][ExtensionHostConnection] New connection established.
+2025-03-26 21:14:21.995 [info] [127.0.0.1][f83ff79b][ExtensionHostConnection] <325> Launched Extension Host Process.
+2025-03-26 21:14:22.550 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/jefftheitguy/.vscode-server/extensions
+2025-03-26 21:14:39.528 [info] [127.0.0.1][0bbfa9d0][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-03-26 21:14:39.578 [info] [127.0.0.1][f83ff79b][ExtensionHostConnection] <325> Extension Host Process exited with code: 0, signal: null.
+2025-03-26 21:14:42.727 [info] [127.0.0.1][026c86d1][ManagementConnection] New connection established.
+2025-03-26 21:14:43.137 [info] [127.0.0.1][8107d812][ExtensionHostConnection] New connection established.
+2025-03-26 21:14:43.233 [info] [127.0.0.1][8107d812][ExtensionHostConnection] <754> Launched Extension Host Process.
+2025-03-26 21:15:04.151 [info] [127.0.0.1][026c86d1][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-03-26 21:15:04.212 [info] [127.0.0.1][8107d812][ExtensionHostConnection] <754> Extension Host Process exited with code: 0, signal: null.
