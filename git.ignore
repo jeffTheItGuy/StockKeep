@@ -1,12 +1,16 @@
 # Build artifacts
 bin/
 obj/
+out/
+publish/
 
-# Rider project files
+# IDE-specific files
+.vscode/
+.history/
 .idea/
+*.DotSettings.user
 
 # User-specific files
-.vscode/
 *.user
 *.suo
 *.userosscache
@@ -21,32 +25,18 @@ logs/
 .env.local
 .env.*.local
 
-# Visual Studio Code
-.vscode/
-.history/
-
 # ASP.NET Core specific
 appsettings.Development.json
 appsettings.Local.json
 
-# Entity Framework Migrations
-Migrations/
+# Entity Framework
+**/Migrations/
 
-# Packages
+# Packages and dependencies
 packages/
 *.nupkg
 *.snupkg
-
-# NuGet restore
 project.lock.json
 **/project.assets.json
 **/packages.lock.json
 .nuget/
-
-# JetBrains Rider / Resharper
-.idea/
-*.DotSettings.user
-
-# .NET Core generated files
-out/
-publish/
