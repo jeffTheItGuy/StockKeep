@@ -13,15 +13,10 @@ jobs:
   displayName: 'Build and Run Docker Image Locally on Self-Hosted Agent'
   steps:
     - checkout: self
-
     - script: |
         docker --version  # Check Docker version
         docker build -t $(imageName):$(dockerImageTag) .  # Build the Docker image
       displayName: 'Build Docker Image'
-
-    - script: |
-        echo "Working directory: $(Build.SourcesDirectory)"
-      displayName: 'Output Working Directory Path'
 
     - script: |
         docker run -d --name $(imageName)-container $(imageName):$(dockerImageTag)  # Run Docker container in detached mode
