@@ -13,18 +13,12 @@ jobs:
   displayName: 'Build and Run Docker Image Locally on Self-Hosted Agent'
   steps:
     - checkout: self
-
-    - script: |
-        docker --version  # Check Docker version
-        docker build -t $(imageName):$(dockerImageTag) .  # Build the Docker image
+    - script: 
+        sudo docker build -t $(imageName):$(dockerImageTag) .
       displayName: 'Build Docker Image'
 
     - script: |
-        echo "Working directory: $(Build.SourcesDirectory)"
-      displayName: 'Output Working Directory Path'
-
-    - script: |
-        docker run -d --name $(imageName)-container $(imageName):$(dockerImageTag)  # Run Docker container in detached mode
+        sudo docker run -d --name $(imageName)-container $(imageName):$(dockerImageTag)  
       displayName: 'Run Docker Container'
 
     - script: |
@@ -32,6 +26,6 @@ jobs:
       displayName: 'Wait for 10 Seconds'
 
     - script: |
-        docker stop $(imageName)-container  # Stop the Docker container
-        docker rm $(imageName)-container  # Remove the Docker container
+        sudo docker stop $(imageName)-container  
+        sudo docker rm $(imageName)-container  
       displayName: 'Stop and Remove Docker Container'
